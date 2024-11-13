@@ -137,21 +137,21 @@ a:hover {
 
 .logo {
     display: block;
-    margin-inline: auto;
+    min-width: 120px;
+    width: 210px;
+    margin-left: -1em;
 }
 
-
-.column-1,
-.column-2 {
-    width: 100%;
-    padding: 1rem;
+.hero-text {
+  font-size: 4.5vw;
+  margin-top: 0;
 }
 
-@media (min-width: 640px) {
-    .column-1 {
-        width: 35%; 
-    }
-    .column-2 {
-        width: 65%;
-    }
+.hero-desc {
+  max-width: 700px;
+}
+
+.full-width {
+  width: 100%;
+  padding: 1em;
 }
