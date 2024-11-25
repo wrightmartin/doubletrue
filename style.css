@@ -74,8 +74,11 @@ textarea:not([rows]) {
 
 
 :root {
-  --brand-color: #CACE2D;
-  --pop-color: #DC4B26;
+  --color-red: #DC4B26;
+  --color-green: #CACE2D;
+
+  --brand-color: var(--color-green);
+  --pop-color: var(--color-red);
   --main-background-color: #EDE9E0;
   --text-color: #11130B;
   --main-font: "ff-real-text-pro", sans-serif;
@@ -143,7 +146,7 @@ a:hover {
 }
 
 .hero-text {
-  font-size: 4.5vw;
+  font-size: clamp(16px, 4.5vw, 80px);
   margin-top: 0;
 }
 
